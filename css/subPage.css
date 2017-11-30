@@ -1,0 +1,74 @@
+.test {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.domain {
+  border-style: dashed;
+}
+.rect {
+  border-radius: 0px;
+}
+html {
+  width: 1920px;
+  height: 1080px;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
+  background-color: #c1f1a4;
+}
+#topNav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#topNav #topLogo {
+  width: 200px;
+  height: 100px;
+}
+#topNav #topLogo img {
+  width: inherit;
+  height: inherit;
+}
+#topNav #title {
+  width: 1600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 40px;
+}
+#subMenuNav {
+  width: 1840px;
+  height: 200px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#subMenuNav div.subMenu {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+div.subMenu:nth-child(1){
+  background-color: #fff875;
+}
+div.subMenu:nth-child(2){
+  background-color: #8dd1f5;
+}
+div.subMenu:nth-child(3){
+  background-color: #ffb7c8;
+}
+#subMenuNav div.subMenu:nth-child(3) {
+  margin-right: 20px;
+}
+#subMainContent {
+  width: 1840px;
+  height: 1327px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
