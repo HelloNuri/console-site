@@ -19,6 +19,7 @@ body {
   background-color: #c1f1a4;
 }
 #topNav {
+  height: 300px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -45,23 +46,14 @@ body {
   margin-right: 40px;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
 }
 #subMenuNav div.subMenu {
-  width: 200px;
-  height: 200px;
+  width: 80px;
+  height: 100px;
   margin-right: 10px;
-  display: flex;
-  justify-content: center;
 }
-div.subMenu:nth-child(1){
-  background-color: #fff875;
-}
-div.subMenu:nth-child(2){
-  background-color: #8dd1f5;
-}
-div.subMenu:nth-child(3){
-  background-color: #ffb7c8;
+img.subMenuImg{
+
 }
 #subMenuNav div.subMenu:nth-child(3) {
   margin-right: 20px;
