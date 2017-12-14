@@ -35,7 +35,16 @@
       <div class="  subMenu" onclick="location.href='./subPage3.html'"><img src="../img/sub_menu3.gif" alt="" class="subMenuImg"></div>
     </article>
     <section id="subMainContent" class="">
-      <textarea name="name" rows="8" cols="80"></textarea>
+      <textarea name="name" rows="8" cols="80" id="myContent"></textarea>
     </section>
+    <button type="button" name="button" style="width:300px;height:300px;font-size:100px;position:relative;top:-500px;left:1400px;" onclick="save()">저장</button>
+    <script>
+      function save(){
+        content = document.getElementById( 'myContent').value;
+        str = content;
+        length = localStorage.length;
+        localStorage.setItem((length+1).toString(),str);
+      }
+    </script>
   </body>
 </html>

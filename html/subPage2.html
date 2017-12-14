@@ -23,8 +23,24 @@
           font-size: 50px;
         }
     </style>
+    <script>
+      function init(){
+        i=2;
+        while(1){
+          parent = document.getElementById('listParent');
+          var li= document.createElement('li');
+          var textnode = document.createTextNode(localStorage.getItem(i));
+          li.appendChild(textnode);
+          li.style.fontSize = "40px";
+          parent.appendChild(li);
+          i++;
+          if(!localStorage.getItem(i))
+            break;
+        }
+      }
+    </script>
   </head>
-  <body>
+  <body onload="init()">
     <section id="topNav" class="">
       <figure id="topLogo">
         <img src="../img/logo.gif" onclick="javascript:location.href='./frontPage.html'">
@@ -39,8 +55,8 @@
       <div class="  subMenu" onclick="location.href='./subPage3.html'"><img src="../img/sub_menu3.gif" alt="" class="subMenuImg"></div>
     </article>
     <section id="subMainContent" class="">
-      <ul>
-        <li class="subListElements">001 - 울고싶어요</li>
+      <ul id="listParent">
+        <!-- <li class="subListElements">001 - 울고싶어요</li>
         <li class="subListElements">002 - 그 드라마 보셨나요</li>
         <li class="subListElements">003 - 위키를 통해 많은 위안을 얻었어요</li>
         <li class="subListElements">004 - 프랜시스 베이컨을 아시나요?</li>
@@ -59,7 +75,7 @@
         <li class="subListElements">017 - 좋아해요</li>
         <li class="subListElements">018 - 우리 집 고양이</li>
         <li class="subListElements">019 - 귀엽죠</li>
-        <li class="subListElements">020 - 길냥이에요</li>
+        <li class="subListElements">020 - 길냥이에요</li> -->
       </ul>
     </section>
   </body>

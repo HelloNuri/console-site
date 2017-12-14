@@ -1,0 +1,42 @@
+
+* {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content-box{
+  /*top:80px;*/
+
+}
+
+.content{
+  color: white;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -ms-flex-pack: center;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+
+.text{
+  width: auto;
+  height: auto;
+  margin: 3px;
+  font-size: 25px;
+  white-space:nowrap;
+  opacity: 1;
+}
+#content1{
+}
+#content2{
+}
+#skip{
+  cursor:pointer;
+}

@@ -19,8 +19,16 @@
           background-color: #c1f1a4;
         }
     </style>
+    <script>
+      function init(){
+        content = document.getElementById('myContent');
+        if(localStorage.getItem('1')){
+          content.value = localStorage.getItem('1');
+        }
+      }
+    </script>
   </head>
-  <body>
+  <body onload="init()">
     <section id="topNav" class="">
       <figure id="topLogo">
         <img src="../img/logo.gif" onclick="javascript:location.href='./frontPage.html'">
@@ -35,7 +43,15 @@
       <div class="  subMenu" onclick="location.href='./subPage3.html'"><img src="../img/sub_menu3.gif" alt="" class="subMenuImg"></div>
     </article>
     <section id="subMainContent" class="">
-      <textarea name="name" rows="8" cols="80"></textarea>
+      <textarea name="name" rows="8" cols="80" id="myContent"></textarea>
     </section>
+    <button type="button" name="button" style="width:300px;height:300px;font-size:100px;position:relative;top:-500px;left:1400px;" onclick="save()">저장</button>
+    <script>
+      function save(){
+        content = document.getElementById('myContent').value;
+        str += content;
+        localStorage.setItem("1",str);
+      }
+    </script>
   </body>
 </html>
